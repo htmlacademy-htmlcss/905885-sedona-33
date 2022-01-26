@@ -21,26 +21,18 @@
             </li>
           </ul>
         </nav>
-        <nav>
-          <ul class="header-nav-icons">
-            <li class="header-nav-icons-item">
-              <a href="#">Search</a>
-            </li>
-            <li class="header-nav-icons-item">
-              <a href="#">Like</a>
-            </li>
-            <li class="header-nav-icons-item">
-              <button>ХОЧУ СЮДА!</button>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-nav-right-side">
+          <button class="btn-search">Search</button>
+          <button>Like</button> 
+          <a href="#">ХОЧУ СЮДА!</a> 
+        </div>
       </header>
       <main>
           <header>
             <h1>Гостиницы Седоны</h1>
             <div class="catalog-bread-crumbs">
-                <a href="#">Home</a>
-                / Гостиницы
+                <a href="#" class="visually-hidden">Home</a>
+                &nbsp;&gt;&nbsp;Гостиницы
             </div>
             <div class="catalog-sort">
                 <ul class="catalog-sort-list">
@@ -75,8 +67,8 @@
                               <input type="text" value="0" placeholder="от"><input type="text" value="9000" placeholder="до">
                           </li>
                           <li class="catalog-sort-checkbox-item">
-                              <button>ПРИМЕНИТЬ</button>
-                              <a href="#">Сбросить</a>
+                            <button>ПРИМЕНИТЬ</button>  
+                            <button>Сбросить</button>
                           </li>
                       </ul>
                   </li>
@@ -113,8 +105,8 @@
                           <p>от 4000 ₽</p>
                       </div>
                       <div class="catalog-hotel-view-item-buttons">
-                          <button>ПОДРОБНЕЕ</button>
-                          <button>В ИЗБРАННОЕ</button>
+                        <a href="#">ПОДРОБНЕЕ</a> 
+                        <button>В ИЗБРАННОЕ</button>
                       </div>
                       <div class="catalog-hotel-view-item-rating">
                           <img src="#" alt="rating">
@@ -129,8 +121,8 @@
                         <p>от 3000 ₽</p> 
                     </div>
                     <div class="catalog-hotel-view-item-buttons">
-                        <button>ПОДРОБНЕЕ</button>
-                        <button>В ИЗБРАННОЕ</button>
+                      <a href="#">ПОДРОБНЕЕ</a> 
+                      <button>В ИЗБРАННОЕ</button>
                     </div>
                     <div class="catalog-hotel-view-item-rating">
                         <img src="#" alt="rating">
@@ -145,8 +137,8 @@
                         <p>от 2000 ₽</p>
                     </div>
                     <div class="catalog-hotel-view-item-buttons">
-                        <button>ПОДРОБНЕЕ</button>
-                        <button>В ИЗБРАННОЕ</button>
+                      <a href="#">ПОДРОБНЕЕ</a> 
+                      <button>В ИЗБРАННОЕ</button>
                     </div>
                     <div class="catalog-hotel-view-item-rating">
                         <img src="#" alt="rating">
@@ -161,7 +153,7 @@
                         <p>от 3000 ₽</p> 
                     </div>
                     <div class="catalog-hotel-view-item-buttons">
-                        <button>ПОДРОБНЕЕ</button>
+                        <a href="#">ПОДРОБНЕЕ</a> 
                         <button>В ИЗБРАННОЕ</button>
                     </div>
                     <div class="catalog-hotel-view-item-rating">
@@ -205,12 +197,12 @@
                 </select>
             </nav>
           </div>
-          <div class="catalog-mailing"> 
+          <section class="catalog-mailing"> 
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <input type="email">
             <button>Подписаться</button>
-          </div>
+          </section>
       </main>
       <footer class="footer footer-main">
         <div class="footer-main-nav">
@@ -227,7 +219,7 @@
               </li>
             </ul>
           </nav>
-          <a href="88128121212" type="tel">+7 (812) 812-12-12</a>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
           <p><a href="https://htmlacademy.ru/">html academy</a></p>
         </div>
       </footer>
