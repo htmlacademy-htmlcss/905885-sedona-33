@@ -1,0 +1,16 @@
+.sedona-preview {
+    background-image: url(../images/index-background.jpg);
+}
+
+.mailing {
+    background-image: url(../images/background-mailing.jpg);
+}
+
+.catalog-sort {
+    background-image: url(../images/catalog-background.jpg);
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
