@@ -1,94 +1,90 @@
 @font-face {
     font-family: "PT Sans";
     src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-style: normal; 
-    font-weight: 400; 
+    font-style: normal;
+    font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: "PT Sans";
     src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-style: normal; 
-    font-weight: 700; 
+    font-style: normal;
+    font-weight: 700;
     font-display: swap;
 }
 
-@font-face {
+body {
+    /* Позиционирование */
+    /* Блочная модель */
+    /* Типографика */
     font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-  }
-  
-  
-  @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 700;
-    src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-    font-display: swap;
-  }
+    color: #000000;
+    font-size: 20px;
+    line-height: 21px;
+    /* Оформление */
+}
 
-  body {
-      font-family: "PT Sans";
-      font-size: 20px;
-      line-height: 21px;
-      color: #000000;
-  }
-
-  .header-nav {
+.header-nav {
+    /* Позиционирование */
+    /* Блочная модель */
+    /* Типографика */
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
-  }
+    /* Оформление */
+}
 
-  .header-item-picked {
-      border-bottom: 2px solid #756257;
-  }
+.header-item-picked {
+    border-bottom: 2px solid #756257;
+}
 
-  .btn-want-here {
-      width: 160px;
-      height: 37px;
-      background: #756257;
-      border-radius: 4px;
-      text-decoration: none;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-  }
+.btn-want-here {
+    /* Позиционирование */
+    /* Блочная модель */
+    width: 160px;
+    height: 37px;
+    /* Типографика */
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    /* Оформление */
+    background-color: #756257;
+    border-radius: 4px;
+}
 
-  .header-nav-list {
-      list-style: none;
-  }
+.header-nav-list {
+    list-style: none;
+}
 
-  .header-nav-list a {
-      color: #000000;
-      text-decoration: none;
-  }
+.header-nav-list a {
+    color: #000000;
+    text-decoration: none;
+}
 
-  .title {
+.title {
     font-size: 60px;
     line-height: 78px;
-  }
+}
 
-  .title-second {
+.title-second {
     font-size: 30px;
     line-height: 36px;
-  }
+}
 
-  .title-third {
-      font-size: 24px;
-      line-height: 28px;
-  }
+.title-third {
+    font-size: 24px;
+    line-height: 28px;
+}
 
-  .title-fourth {
-      font-size: 24px;
-      line-height: 28px;
-  }
+.title-fourth {
+    font-size: 24px;
+    line-height: 28px;
+}
 
 .sedona-preview {
-    background-image: url(../images/index-background.jpg);
+    background-image: url(../images/welcome-background.jpg);
     background-repeat: no-repeat;
     background-size: 1200px 485px;
 }
@@ -97,7 +93,7 @@
     list-style: none;
 }
 
-.true-city-benefits-list{
+.true-city-benefits-list {
     list-style: none;
 }
 
@@ -107,18 +103,23 @@
 }
 
 .hotel-search a {
-    background-color: #756257;
-    border-radius: 10px;
+    /* Позиционирование */
+    /* Блочная модель */
+    /* Типографика */
     text-decoration: none;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+    /* Оформление */
+    background-color: #756257;
+    border-radius: 10px;
 }
 
 .mailing {
-    color: white;
+    color: #FFFFFF;
+    background-image: url(../images/mailing-background.jpg);
 }
 
 .mailing h2 {
@@ -131,17 +132,21 @@
 }
 
 .mailing-button {
-    background: #83B3D3;
+    /* Позиционирование */
+    /* Блочная модель */
+    /* Типографика */
     text-transform: uppercase;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;  
+    line-height: 26px;
+    /* Оформление */
+    background-color: #83B3D3;
     border-radius: 0px 10px 10px 0px;
 }
 
 .mailing-input {
-    background: #F2F2F2;
+    background-color: #F2F2F2;
     border-radius: 0px 10px 10px 0px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
@@ -152,47 +157,66 @@
 }
 
 .title-second-container {
-    width: 1200px;
-    height: 282px;
+    /* Позиционирование */
     left: 40px;
     top: 550px;
+    /* Блочная модель */
+    width: 1200px;
+    height: 282px;
+    /* Типографика */
     text-align: center;
+    /* Оформление */
 }
 
 .title-second-container h2 {
-    position: absolute;
-    width: 720px;
-    height: 80px;
+    /* Позиционирование */
     left: 280px;
     top: 613px;
+    /* Блочная модель */
+    width: 720px;
+    height: 80px;
+    /* Типографика */
     font-size: 30px;
     text-transform: uppercase;
     line-height: 36px;
+    /* Оформление */
 }
 
 .title-second-container p {
-    position: absolute;
-    width: 720px;
-    height: 37px;
+    /* Позиционирование */
     left: 280px;
     top: 716px;
+    /* Блочная модель */
+    width: 720px;
+    height: 37px;
+    /* Типографика */
+    /* Оформление */
 }
 
 .true-city-container {
-    width: 1200px;
-    height: 384px;
+    /* Позиционирование */
     left: 40px;
     top: 832px;
+    /* Блочная модель */
+    width: 1200px;
+    height: 384px;
+    /* Типографика */
+    /* Оформление */
+    background-image: url(../images/benefits-true-city.jpg);
+    background-repeat: no-repeat;
 }
 
 .true-city-text {
-    text-align: center;
-    color:#FFFFFF;
-    position: absolute;
-    width: 400px;
-    height: 384px;
+    /* Позиционирование */
     left: 40px;
     top: 832px;
+    /* Блочная модель */
+    width: 400px;
+    height: 384px;
+    /* Типографика */
+    text-align: center;
+    color: #FFFFFF;
+    /* Оформление */
     background-color: #83B3D3;
 }
 
@@ -208,24 +232,15 @@
 }
 
 .true-city-image {
-    position: absolute;
-    width: 800px;
-    height: 384px;
     left: 440px;
     top: 832px;
-}
-
-.mailing {
-    background-image: url(../images/background-mailing.jpg);
-}
-
-.catalog-sort {
-    background-image: url(../images/catalog-background.jpg);
-
+    width: 800px;
+    height: 384px;
 }
 
 .catalog-sort {
     color: #FFFFFF;
+    background-image: url(../images/catalog-background.jpg);
 }
 
 .bread-crumbs-list {
@@ -256,10 +271,10 @@
 }
 
 .catalog-sort-menu-type-item {
-    width: 48px;
-    height: 48px;
     left: 1120px;
     top: 517px;
+    width: 48px;
+    height: 48px;
     text-align: center;
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
@@ -305,37 +320,37 @@
 
 .catalog-hotel-view-item a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 .more {
     text-transform: uppercase;
-    background: #756257;
+    background-color: #756257;
     border-radius: 4px;
 }
 
 .btn-favourite-hotel {
     text-transform: uppercase;
-    background: #83B3D3;
+    background-color: #83B3D3;
     border-radius: 4px;
 }
 
 .btn-picked {
     text-transform: uppercase;
-    background: #7DB54F;
+    background-color: #7DB54F;
     border-radius: 4px;
 }
 
 .rating-number {
     font-size: 16px;
-    line-height: 21px;   
+    line-height: 21px;
 }
 
 .catalog-pages-buttons {
     color: #FFFFFF;
     text-decoration: none;
-    background: #83B3D3;
-    border-radius: 4px; 
+    background-color: #83B3D3;
+    border-radius: 4px;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 26px;
@@ -355,6 +370,37 @@
     list-style: none;
 }
 
+.devil-bridge-section {
+    width: 1200px;
+    background-image: url(../images/benefits-devil-bridge.jpg);
+    background-repeat: no-repeat;
+}
+
+.devil-bridge-img {
+    left: 40px;
+    width: 800px;
+    height: 384px;
+}
+
+.devil-bridge-paragraph {
+    text-align: center;
+    width: 400px;
+    height: 384px;
+    background-color: #83B3D3;
+    color: #FFFFFF;
+}
+
+.devil-bridge-paragraph h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.devil-bridge-paragraph p {
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .footer-phone {
     font-style: normal;
     font-weight: 700;
@@ -369,4 +415,23 @@
 .visually-hidden {
     position: fixed;
     transform: scale(0);
+}
+
+.search-icon {
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+}
+
+.favourite-icon {
+    background-image: url(../images/favourite.svg);
+    background-repeat: no-repeat;
+}
+
+.title-housing {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.housing-container {
+    background-image: url(../images/home.svg);
 }
