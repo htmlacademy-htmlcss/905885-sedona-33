@@ -13,24 +13,24 @@
             <a class="logo"><img src="images/logo.svg" width="139" height="70" alt="логотип седона"></a>
             <ul class="header-nav-list">
                 <li class="header-nav-item header-item-picked">
-                    <a>Главная</a>
+                    <a class="header-nav-link">Главная</a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="#">О Седоне</a>
+                    <a class="header-nav-link" href="#">О Седоне</a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="catalog.html">Гостиницы</a>
+                    <a class="header-nav-link" href="catalog.html">Гостиницы</a>
                 </li>
             </ul>
             <ul class="header-nav-list header-nav-list-user">
                 <li class="header-nav-item header-nav-list-user-item">
-                    <a class="search-icon" href="#"><span>Поиск</span></a>
+                    <a class="header-nav-link search-icon visually-hidden" href="#"><span>Поиск</span></a>
                 </li>
                 <li class="header-nav-item header-nav-list-user-item">
-                    <a class="favourite-icon" href="#"><span>Избранное</span></a>
+                    <a class="header-nav-link favourite-icon visually-hidden" href="#"><span>Избранное</span></a>
                 </li>
                 <li class="header-nav-list-user-item">
-                    <a class="btn-want-here" href="#">Хочу Сюда!</a>
+                    <a class="header-nav-link btn-want-here" href="#">Хочу Сюда!</a>
                 </li>
             </ul>
         </nav>
@@ -54,31 +54,27 @@
                                 <p>— №1 —</p>
                                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                             </div>
-                            <!-- <img class="true-city-image" src="images/benefits-true-city.jpg" width="800" height="384" alt="картинка городка"> -->
                         </div>
                         <ul class="true-city-benefits-list">
                             <li class="true-city-benefits-item">
                                 <img src="images/benefits-home.svg" width="75" height="72" alt="">
-                                <div class="housing-container">
-                                    <h4 class="title-housing">Жильё</h4>
-                                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                                </div>
+                                <h4 class="title-housing">Жильё</h4>
+                                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                             </li>
                             <li class="true-city-benefits-item">
                                 <img src="images/benefits-burger.svg" width="74" height="70" alt="">
-                                <h4 class="title-fourth">Еда</h4>
+                                <h4 class="title-housing">Еда</h4>
                                 <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                             </li>
                             <li class="true-city-benefits-item">
                                 <img src="images/benefits-souvenir.svg" width="64" height="76" alt="">
-                                <h4 class="title-fourth">Сувениры</h4>
+                                <h4 class="title-housing">Сувениры</h4>
                                 <p>Не только китайского, но и настоящего местного производства!</p>
                             </li>
                         </ul>
                     </li>
                     <li class="reasons-item reasons-item-devil-bridge">
                         <div class="devil-bridge-section">
-                            <!-- <img class="devil-bridge-img" src="images/benefits-devil-bridge.jpg" width="800" height="384" alt=""> -->
                             <div class="devil-bridge-paragraph">
                                 <h3 class="title-reason">Там есть мост дьявола</h3>
                                 <p>— №2 —</p>
@@ -86,25 +82,21 @@
                             </div>
                         </div>
                     </li>
-                    <div class="reasons-bottom">
-                        <li class="reasons-item reasons-bottom-item">
-                            <h3 class="title-reason">Небольшая площадь
-                            </h3>
-                            <p>— №3 —</p>
-                            <p>Все достопримечательности находятся очень близко</p>
-                        </li>
-                        <li class="reasons-item reasons-bottom-item reasons-bottom-mod-item">
-                            <h3 class="title-reason">Красивая дорога
-                            </h3>
-                            <p>— №4 —</p>
-                            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                        </li>
-                        <li class="reasons-item reasons-bottom-item">
-                            <h3 class="title-reason">Мало туристов</h3>
-                            <p>— №5 —</p>
-                            <p>Большинство едет в Гранд Каньон и толпится там</p>
-                        </li>
-                    </div>
+                    <li class="reasons-item reasons-bottom-item">
+                        <h3 class="title-reason">Небольшая площадь</h3>
+                        <p>— №3 —</p>
+                        <p>Все достопримечательности находятся очень близко</p>
+                    </li>
+                    <li class="reasons-item reasons-bottom-item reasons-bottom-mod-item">
+                        <h3 class="title-reason">Красивая дорога</h3>
+                        <p>— №4 —</p>
+                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </li>
+                    <li class="reasons-item reasons-bottom-item">
+                        <h3 class="title-reason">Мало туристов</h3>
+                        <p>— №5 —</p>
+                        <p>Большинство едет в Гранд Каньон и толпится там</p>
+                    </li>
                 </ol>
             </section>
             <section class="hotel-search">
@@ -116,8 +108,7 @@
                 <h2 class="title-mailing title-mailing-index">Подпишитесь на рассылку</h2>
                 <p class="mailing-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form class="mailing-email" action="#" method="get">
-                    <input class="mailing-input" type="email" id="email-main" name="email-main"><label class="visually-hidden" for="email-main">Ваш
-          e-mail</label>
+                    <input class="mailing-input" type="email" id="email-main" name="email-main"><label class="visually-hidden" for="email-main">Ваш e-mail</label>
                     <button class="mailing-button" type="submit">Подписаться</button>
                 </form>
             </section>
