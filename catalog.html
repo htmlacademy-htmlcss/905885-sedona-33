@@ -24,10 +24,10 @@
             </ul>
             <ul class="header-nav-list header-nav-list-user">
                 <li class="header-nav-item header-nav-list-user-item">
-                    <a class="header-nav-link search-icon visually-hidden" href="#"><span>Поиск</span></a>
+                    <a class="header-nav-link search-icon" href="#"><span class="visually-hidden">Поиск</span></a>
                 </li>
                 <li class="header-nav-item header-nav-list-user-item">
-                    <a class="header-nav-link favourite-icon visually-hidden" href="#"><span>Избранное</span></a>
+                    <a class="header-nav-link favourite-icon" href="#"><span class="visually-hidden">Избранное</span></a>
                 </li>
                 <li class="header-nav-list-user-item">
                     <a class="header-nav-link btn-want-here" href="#">Хочу Сюда!</a>
@@ -40,10 +40,10 @@
             <section class="catalog-sort">
                 <div class="catalog-sort-section">
                     <div class="title-bread-crumbs">
-                        <h1 class="title-catalog">Гостиницы Седоны</h1>
+                        <h1 class="catalog-title">Гостиницы Седоны</h1>
                         <ul class="bread-crumbs-list">
                             <li class="bread-crumbs-item">
-                                <a class="home" href="#"><span class="bread-crumbs-main visually-hidden">Главная</span></a>
+                                <a class="home bread-crumbs-main" href="#"><span class="visually-hidden">Главная</span></a>
                             </li>
                             <li class="bread-crumbs-item">
                                 <a>Гостиницы</a>
@@ -55,13 +55,13 @@
                             <legend>Инфраструктура:</legend>
                             <ul class="catalog-sort-checkbox-list">
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="checkbox" name="infrastruct" id="pool" value="pool" checked><label class="sort-checkbox-paragraph" for="pool">Бассейн</label>
+                                    <input type="checkbox" name="infrastruct" id="pool" value="pool" checked><label class="sort-checkbox-label" for="pool">Бассейн</label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="checkbox" name="infrastruct" id="parking" value="parking" checked><label class="sort-checkbox-paragraph" for="parking">Парковка</label>
+                                    <input type="checkbox" name="infrastruct" id="parking" value="parking" checked><label class="sort-checkbox-label" for="parking">Парковка</label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="checkbox" name="infrastruct" id="wifi" value="wifi"><label class="sort-checkbox-paragraph" for="wifi">Wi-Fi</label>
+                                    <input type="checkbox" name="infrastruct" id="wifi" value="wifi"><label class="sort-checkbox-label" for="wifi">Wi-Fi</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -69,13 +69,13 @@
                             <legend>Тип жилья:</legend>
                             <ul class="catalog-sort-checkbox-list">
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="radio" name="type" id="hotel" value="hotel" checked><label class="sort-checkbox-paragraph" for="hotel">Гостиница</label>
+                                    <input type="radio" name="type" id="hotel" value="hotel" checked><label class="sort-checkbox-label" for="hotel">Гостиница</label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="radio" name="type" id="motel" value="motel"><label class="sort-checkbox-paragraph" for="motel">Мотель</label>
+                                    <input type="radio" name="type" id="motel" value="motel"><label class="sort-checkbox-label" for="motel">Мотель</label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="radio" name="type" id="aparts" value="aparts"><label class="sort-checkbox-paragraph" for="aparts">Апартаменты</label>
+                                    <input type="radio" name="type" id="aparts" value="aparts"><label class="sort-checkbox-label" for="aparts">Апартаменты</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -116,66 +116,58 @@
                 <div class="catalog-hotels-section">
                     <ul class="catalog-hotel-view-list">
                         <li class="catalog-hotel-view-item">
-                            <img src="images/hotel-amara.jpg" width="299" height="206" alt="Гостиница: Amara Resort & Spa">
+                            <img class="hotel-image" src="images/hotel-amara.jpg" width="299" height="206" alt="Гостиница: Amara Resort & Spa">
                             <h3 class="title-third">Amara Resort & Spa</h3>
-                            <div class="catalog-hotel-view-item-cost">
-                                <p>Гостиница</p>
-                                <p>от 4000 ₽</p>
-                            </div>
-                            <div class="catalog-hotel-view-item-buttons">
-                                <a class="more" href="#">Подробнее</a>
-                                <a class="btn-favourite-hotel" href="#">В избранное</a>
+                            <div class="hotel-view-cost-buttons">
+                                <p class="hotel-view-paragraph">Гостиница</p>
+                                <p class="hotel-view-paragraph">от 4000 ₽</p>
+                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
-                                <img src="images/four-stars.svg" width="91" height="17" alt="4 звезды">
+                                <img class="hotel-view-stars" src="images/four-stars.svg" width="91" height="17" alt="4 звезды">
                                 <p class="rating-number">Рейтинг: 8,5</p>
                             </div>
                         </li>
                         <li class="catalog-hotel-view-item">
                             <img src="images/hotel-desert.jpg" width="299" height="206" alt="Гостиница: Desert Quail Inn">
                             <h3 class="title-third">Desert Quail Inn</h3>
-                            <div class="catalog-hotel-view-item-cost">
-                                <p>Гостиница</p>
-                                <p>от 3000 ₽</p>
-                            </div>
-                            <div class="catalog-hotel-view-item-buttons">
-                                <a class="more" href="#">Подробнее</a>
-                                <a class="btn-favourite-hotel" href="#">В избранное</a>
+                            <div class="hotel-view-cost-buttons">
+                                <p class="hotel-view-paragraph">Гостиница</p>
+                                <p class="hotel-view-paragraph">от 3000 ₽</p>
+                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
-                                <img src="images/three-stars.svg" width="68" height="17" alt="3 звезды">
+                                <img class="hotel-view-stars" src="images/three-stars.svg" width="68" height="17" alt="3 звезды">
                                 <p class="rating-number">Рейтинг: 8,9</p>
                             </div>
                         </li>
                         <li class="catalog-hotel-view-item">
                             <img src="images/hotel-villas.jpg" width="299" height="206" alt="Гостиница: Villas at Poco Diablo">
                             <h3 class="title-third">Villas at Poco Diablo</h3>
-                            <div class="catalog-hotel-view-item-cost">
-                                <p>Гостиница</p>
-                                <p>от 2000 ₽</p>
-                            </div>
-                            <div class="catalog-hotel-view-item-buttons">
-                                <a class="more" href="#">Подробнее</a>
-                                <a class="btn-favourite-hotel btn-picked" href="#">В избранном</a>
+                            <div class="hotel-view-cost-buttons">
+                                <p class="hotel-view-paragraph">Гостиница</p>
+                                <p class="hotel-view-paragraph">от 2000 ₽</p>
+                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
-                                <img src="images/two-stars.svg" width="43" height="17" alt="2 звезды">
+                                <img class="hotel-view-stars" src="images/two-stars.svg" width="43" height="17" alt="2 звезды">
                                 <p class="rating-number">Рейтинг: 9,2</p>
                             </div>
                         </li>
                         <li class="catalog-hotel-view-item">
                             <img src="images/hotel-greentree.jpg" width="299" height="206" alt="Гостиница: GreenTree Inn">
                             <h3 class="title-third">GreenTree Inn</h3>
-                            <div class="catalog-hotel-view-item-cost">
-                                <p>Гостиница</p>
-                                <p>от 3000 ₽</p>
-                            </div>
-                            <div class="catalog-hotel-view-item-buttons">
-                                <a class="more" href="#">Подробнее</a>
-                                <a class="btn-favourite-hotel" href="#">В избранное</a>
+                            <div class="hotel-view-cost-buttons">
+                                <p class="hotel-view-paragraph">Гостиница</p>
+                                <p class="hotel-view-paragraph">от 3000 ₽</p>
+                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
-                                <img src="images/two-stars.svg" width="43" height="17" alt="2 звезды">
+                                <img class="hotel-view-stars" src="images/two-stars.svg" width="43" height="17" alt="2 звезды">
                                 <p class="rating-number">Рейтинг: 9,2</p>
                             </div>
                         </li>
