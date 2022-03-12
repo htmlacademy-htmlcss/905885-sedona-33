@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <nav class="header-nav">
-            <a class="logo"><img src="images/logo.svg" width="139" height="70" alt="логотип седона"></a>
+            <a class="logo" href="#"><img src="images/logo.svg" width="139" height="70" alt="логотип седона"></a>
             <ul class="header-nav-list">
                 <li class="header-nav-item">
                     <a class="header-nav-link" href="index.html">Главная</a>
@@ -18,19 +18,29 @@
                 <li class="header-nav-item">
                     <a class="header-nav-link" href="#">О Седоне</a>
                 </li>
-                <li class="header-nav-item">
-                    <a class="header-nav-link header-item-picked">Гостиницы</a>
+                <li class="header-nav-item header-item-picked">
+                    <a class="header-nav-link">Гостиницы</a>
                 </li>
             </ul>
-            <ul class="header-nav-list header-nav-list-user">
-                <li class="header-nav-item header-nav-list-user-item">
-                    <a class="header-nav-link search-icon" href="#"><span class="visually-hidden">Поиск</span></a>
-                </li>
-                <li class="header-nav-item header-nav-list-user-item">
-                    <a class="header-nav-link favourite-icon" href="#"><span class="visually-hidden">Избранное</span></a>
+            <ul class="header-nav-list-user">
+                <li class="header-nav-list-user-item">
+                    <a class="header-icon" href="#">
+                        <svg class="nav-icon" aria-hidden="true" focusable="false" width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z" fill="black"/>
+                            </svg>
+                        <span class="visually-hidden">Поиск</span>
+                    </a>
                 </li>
                 <li class="header-nav-list-user-item">
-                    <a class="header-nav-link btn-want-here" href="#">Хочу Сюда!</a>
+                    <a class="header-icon" href="#">
+                        <svg class="nav-icon" aria-hidden="true" focusable="false" width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z" fill="black"/>
+                            </svg>
+                        <span class="visually-hidden">Избранное</span>
+                    </a>
+                </li>
+                <li class="header-nav-list-user-item user-item-button">
+                    <a class="btn-want-here" href="#">Хочу Сюда!</a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +53,9 @@
                         <h1 class="catalog-title">Гостиницы Седоны</h1>
                         <ul class="bread-crumbs-list">
                             <li class="bread-crumbs-item">
-                                <a class="home bread-crumbs-main" href="#"><span class="visually-hidden">Главная</span></a>
+                                <a class="bread-crumbs-main" href="index.html">
+                                    <span class="visually-hidden">Главная</span>
+                                </a>
                             </li>
                             <li class="bread-crumbs-item">
                                 <a>Гостиницы</a>
@@ -103,13 +115,22 @@
                     </select>
                     <ul class="catalog-sort-menu-type-list">
                         <li class="catalog-sort-menu-type-item sort-menu-item-picked">
-                            <a href="#"><span class="mode-view-tile visually-hidden">Сортировка сеткой</span></a>
+                            <a class="catalog-view" href="#">
+                                <svg class="mode-view-tile" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Сортировка сеткой</span>
+                            </a>
                         </li>
                         <li class="catalog-sort-menu-type-item">
-                            <a href="#"><span class="mode-view-slideshow visually-hidden">Сортировка превью</span></a>
+                            <a class="catalog-view" href="#">
+                                <svg class="mode-view-slideshow" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Сортировка превью</span>
+                            </a>
                         </li>
                         <li class="catalog-sort-menu-type-item">
-                            <a href="#"><span class="mode-view-list visually-hidden">Сортировка строками</span></a>
+                            <a class="catalog-view" href="#">
+                                <svg class="mode-view-list" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Сортировка строками</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -121,7 +142,7 @@
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 4000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
                                 <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
@@ -135,7 +156,7 @@
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 3000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
                                 <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
@@ -149,8 +170,8 @@
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 2000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
-                                <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
+                                <a class="hotel-button btn-favourite-hotel btn-picked" href="#">В избранном</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
                                 <img class="hotel-view-stars" src="images/two-stars.svg" width="43" height="17" alt="2 звезды">
@@ -163,7 +184,7 @@
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 3000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
                                 <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
