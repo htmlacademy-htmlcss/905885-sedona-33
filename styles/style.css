@@ -672,6 +672,14 @@ body {
     text-transform: uppercase;
 }
 
+.hotel-image-link:hover .hotel-image {
+    opacity: 0.6;
+}
+
+.hotel-image-link:focus .hotel-image {
+    outline: 3px solid #83B3D3;
+}
+
 .hotel-view-cost-buttons {
     display: grid;
     grid-template-columns: 130px 143px;
@@ -1110,7 +1118,7 @@ body {
     position: relative;
     width: 12px;
     height: 12px;
-    margin-right: 26px;
+    margin-right: 31px;
 }
 
 .bread-crumbs-item:nth-child(1)::after {
@@ -1118,20 +1126,38 @@ body {
     position: absolute;
     width: 5px;
     height: 8px;
-    left: 24px;
+    left: 29px;
     top: 8px;
     background-image: url(../images/vector.svg);
 }
 
+.bread-crumbs-main {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.bread-crumbs-home {
+    position: relative;
+    left: 5px;
+}
+
 .bread-crumbs-list .bread-crumbs-item:nth-child(1) .bread-crumbs-main {
     position: relative;
-    top: 5px;
     display: block;
-    width: 12px;
-    height: 12px;
-    background-image: url(../images/home-bread-crumbs.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 22px;
+    height: 21px;
+}
+
+.bread-crumbs-main:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.bread-crumbs-main:hover {
+    opacity: 0.6;
+}
+
+.bread-crumbs-main:hover .bread-crumbs-home path {
+    opacity: 0.6;
 }
 
 .catalog-picked {
