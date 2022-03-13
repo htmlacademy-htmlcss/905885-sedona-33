@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <nav class="header-nav">
-            <a class="logo"><img src="images/logo.svg" width="139" height="70" alt="логотип седона"></a>
+            <a class="logo" href="#"><img src="images/logo.svg" width="139" height="70" alt="логотип седона"></a>
             <ul class="header-nav-list">
                 <li class="header-nav-item">
                     <a class="header-nav-link" href="index.html">Главная</a>
@@ -18,19 +18,29 @@
                 <li class="header-nav-item">
                     <a class="header-nav-link" href="#">О Седоне</a>
                 </li>
-                <li class="header-nav-item">
-                    <a class="header-nav-link header-item-picked">Гостиницы</a>
+                <li class="header-nav-item header-item-picked">
+                    <a class="header-nav-link">Гостиницы</a>
                 </li>
             </ul>
-            <ul class="header-nav-list header-nav-list-user">
-                <li class="header-nav-item header-nav-list-user-item">
-                    <a class="header-nav-link search-icon" href="#"><span class="visually-hidden">Поиск</span></a>
-                </li>
-                <li class="header-nav-item header-nav-list-user-item">
-                    <a class="header-nav-link favourite-icon" href="#"><span class="visually-hidden">Избранное</span></a>
+            <ul class="header-nav-list-user">
+                <li class="header-nav-list-user-item">
+                    <a class="header-icon" href="#">
+                        <svg class="nav-icon" aria-hidden="true" focusable="false" width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z" fill="black"/>
+                            </svg>
+                        <span class="visually-hidden">Поиск</span>
+                    </a>
                 </li>
                 <li class="header-nav-list-user-item">
-                    <a class="header-nav-link btn-want-here" href="#">Хочу Сюда!</a>
+                    <a class="header-icon" href="#">
+                        <svg class="nav-icon" aria-hidden="true" focusable="false" width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z" fill="black"/>
+                            </svg>
+                        <span class="visually-hidden">Избранное</span>
+                    </a>
+                </li>
+                <li class="header-nav-list-user-item user-item-button">
+                    <a class="btn-want-here" href="#">Хочу Сюда!</a>
                 </li>
             </ul>
         </nav>
@@ -43,10 +53,16 @@
                         <h1 class="catalog-title">Гостиницы Седоны</h1>
                         <ul class="bread-crumbs-list">
                             <li class="bread-crumbs-item">
-                                <a class="home bread-crumbs-main" href="#"><span class="visually-hidden">Главная</span></a>
+                                <a class="bread-crumbs-main" href="index.html">
+                                    <svg class="bread-crumbs-home" aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white"/>
+                                    </svg>
+                                    <span class="visually-hidden">Главная</span>
+                                </a>
                             </li>
                             <li class="bread-crumbs-item">
-                                <a>Гостиницы</a>
+                                <a class="bread-crumbs-main" href="#">Гостиницы</a>
                             </li>
                         </ul>
                     </div>
@@ -103,25 +119,36 @@
                     </select>
                     <ul class="catalog-sort-menu-type-list">
                         <li class="catalog-sort-menu-type-item sort-menu-item-picked">
-                            <a href="#"><span class="mode-view-tile visually-hidden">Сортировка сеткой</span></a>
+                            <a class="catalog-view" href="#">
+                                <svg class="mode-view-tile" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Сортировка сеткой</span>
+                            </a>
                         </li>
                         <li class="catalog-sort-menu-type-item">
-                            <a href="#"><span class="mode-view-slideshow visually-hidden">Сортировка превью</span></a>
+                            <a class="catalog-view" href="#">
+                                <svg class="mode-view-slideshow" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Сортировка превью</span>
+                            </a>
                         </li>
                         <li class="catalog-sort-menu-type-item">
-                            <a href="#"><span class="mode-view-list visually-hidden">Сортировка строками</span></a>
+                            <a class="catalog-view" href="#">
+                                <svg class="mode-view-list" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Сортировка строками</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="catalog-hotels-section">
                     <ul class="catalog-hotel-view-list">
                         <li class="catalog-hotel-view-item">
-                            <img class="hotel-image" src="images/hotel-amara.jpg" width="299" height="206" alt="Гостиница: Amara Resort & Spa">
+                            <a class="hotel-image-link" href="#">
+                                <img class="hotel-image" src="images/hotel-amara.jpg" width="299" height="206" alt="Гостиница: Amara Resort & Spa">
+                            </a>
                             <h3 class="title-third">Amara Resort & Spa</h3>
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 4000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
                                 <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
@@ -130,12 +157,14 @@
                             </div>
                         </li>
                         <li class="catalog-hotel-view-item">
-                            <img src="images/hotel-desert.jpg" width="299" height="206" alt="Гостиница: Desert Quail Inn">
+                            <a class="hotel-image-link" href="#">
+                                <img class="hotel-image" src="images/hotel-desert.jpg" width="299" height="206" alt="Гостиница: Desert Quail Inn">
+                            </a>
                             <h3 class="title-third">Desert Quail Inn</h3>
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 3000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
                                 <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
@@ -144,13 +173,15 @@
                             </div>
                         </li>
                         <li class="catalog-hotel-view-item">
-                            <img src="images/hotel-villas.jpg" width="299" height="206" alt="Гостиница: Villas at Poco Diablo">
+                            <a class="hotel-image-link" href="#">
+                                <img class="hotel-image" src="images/hotel-villas.jpg" width="299" height="206" alt="Гостиница: Villas at Poco Diablo">
+                            </a>
                             <h3 class="title-third">Villas at Poco Diablo</h3>
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 2000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
-                                <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
+                                <a class="hotel-button btn-favourite-hotel btn-picked" href="#">В избранном</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
                                 <img class="hotel-view-stars" src="images/two-stars.svg" width="43" height="17" alt="2 звезды">
@@ -158,12 +189,14 @@
                             </div>
                         </li>
                         <li class="catalog-hotel-view-item">
-                            <img src="images/hotel-greentree.jpg" width="299" height="206" alt="Гостиница: GreenTree Inn">
+                            <a class="hotel-image-link" href="#">
+                                <img class="hotel-image" src="images/hotel-greentree.jpg" width="299" height="206" alt="Гостиница: GreenTree Inn">
+                            </a>
                             <h3 class="title-third">GreenTree Inn</h3>
                             <div class="hotel-view-cost-buttons">
                                 <p class="hotel-view-paragraph">Гостиница</p>
                                 <p class="hotel-view-paragraph">от 3000 ₽</p>
-                                <a class="hotel-button more" href="#">Подробнее</a>
+                                <a class="hotel-button hotel-button-more" href="#">Подробнее</a>
                                 <a class="hotel-button btn-favourite-hotel" href="#">В избранное</a>
                             </div>
                             <div class="catalog-hotel-view-item-rating">
@@ -220,17 +253,39 @@
         <div class="footer-container">
             <ul class="footer-social-list">
                 <li class="footer-social-item">
-                    <a href="https://twitter.com/htmlacademy_ru"><img src="images/social-twitter.svg" width="18" height="15" alt="Наш твиттер"></a>
+                    <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
+                        <svg class="social-link-svg" aria-hidden="true" focusable="false" width="18" height="15" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v15H0z"/></clipPath></defs></svg>
+                    </a>
                 </li>
                 <li class="footer-social-item">
-                    <a href="https://www.facebook.com/htmlacademy"><img src="images/social-facebook.svg" width="10" height="18" alt="Наш фейсбук"></a>
+                    <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
+                        <svg class="social-link-svg" aria-hidden="true" focusable="false" width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3"/></svg>
+                    </a>
                 </li>
                 <li class="footer-social-item">
-                    <a href="https://www.youtube.com/c/HTMLAcademyRUS"><img src="images/social-youtube.svg" width="20" height="16" alt="Наш ютуб канал"></a>
+                    <a class="footer-social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                        <svg class="social-link-svg" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_24196_686)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_24196_686">
+                            <rect width="20" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </a>
                 </li>
             </ul>
             <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <a class="footer-html-academy-logo" href="https://htmlacademy.ru/"><img src="images/logo-htmlacademy.svg" width="115" height="34" alt="Сайт html академии"></a>
+            <a class="footer-html-academy-logo" href="https://htmlacademy.ru/">
+                <svg class="html-academy-logo" aria-hidden="true" focusable="false" width="115" height="34" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" fill="#000"/>
+                </svg>
+                <span class="visually-hidden">HTML Academy | Главная</span>
+            </a>
         </div>
     </footer>
 </body>
