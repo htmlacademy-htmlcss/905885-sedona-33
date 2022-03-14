@@ -366,7 +366,7 @@ body {
 }
 
 .hotel-search-button:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .mailing {
