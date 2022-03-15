@@ -71,13 +71,25 @@
                             <legend>Инфраструктура:</legend>
                             <ul class="catalog-sort-checkbox-list">
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="checkbox" name="infrastruct" id="pool" value="pool" checked><label class="sort-checkbox-label" for="pool">Бассейн</label>
+                                    <label class="sort-checkbox-label">
+                                        <input class="visually-hidden control-input" type="checkbox" name="infrastruct" id="pool" value="pool" checked>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Бассейн</span> 
+                                    </label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="checkbox" name="infrastruct" id="parking" value="parking" checked><label class="sort-checkbox-label" for="parking">Парковка</label>
+                                    <label class="sort-checkbox-label">
+                                        <input class="visually-hidden control-input" type="checkbox" name="infrastruct" id="parking" value="parking" checked>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Парковка</span> 
+                                    </label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="checkbox" name="infrastruct" id="wifi" value="wifi"><label class="sort-checkbox-label" for="wifi">Wi-Fi</label>
+                                    <label class="sort-checkbox-label">
+                                        <input class="visually-hidden control-input" type="checkbox" name="infrastruct" id="wifi" value="wifi">
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Wi-Fi</span> 
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -85,25 +97,54 @@
                             <legend>Тип жилья:</legend>
                             <ul class="catalog-sort-checkbox-list">
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="radio" name="type" id="hotel" value="hotel" checked><label class="sort-checkbox-label" for="hotel">Гостиница</label>
+                                    <label class="sort-checkbox-label" for="hotel">
+                                        <input class="visually-hidden control-input" type="radio" name="type" id="hotel" value="hotel" checked>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Гостиница</span>                                       
+                                    </label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="radio" name="type" id="motel" value="motel"><label class="sort-checkbox-label" for="motel">Мотель</label>
+                                    <label class="sort-checkbox-label" for="motel"> 
+                                        <input class="visually-hidden control-input" type="radio" name="type" id="motel" value="motel">
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Мотель</span>  
+                                    </label>
                                 </li>
                                 <li class="catalog-sort-checkbox-item">
-                                    <input type="radio" name="type" id="aparts" value="aparts"><label class="sort-checkbox-label" for="aparts">Апартаменты</label>
+                                    <label class="sort-checkbox-label" for="aparts">
+                                        <input class="visually-hidden control-input" type="radio" name="type" id="aparts" value="aparts">
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Апартаменты</span> 
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>
                         <fieldset class="housing-cost">
                             <legend>Стоимость, ₽:</legend>
-                            <div class="housing-cost-input-container">
-                                <input class="housing-cost-input-from" type="text" id="from-value" name="from-value" value="0" placeholder="от"><label class="visually-hidden" for="from-value">от</label>
-                                <input class="housing-cost-input-to" type="text" id="to-value" name="to-value" value="9000" placeholder="до"><label class="visually-hidden" for="to-value">до</label>
-                            </div>
                             <div class="housing-cost-input-container-range">
-                                <input class="range-from" type="range" min="0" max="4500" step="100" value="0">
-                                <input class="range-to" type="range" min="4500" max="9000" step="100" value="7500">
+                                <div class="range-wrapper-inputs">
+                                    <div class="housing-cost-input-container">
+                                        <input class="housing-cost-input housing-cost-input-from" type="text" id="from-value" name="from-value" value="0" placeholder="от">
+                                        <label class="housing-cost-label housing-cost-label-from" for="from-value">от</label>
+                                        <input class="housing-cost-input housing-cost-input-to" type="text" id="to-value" name="to-value" value="9000" placeholder="до">
+                                        <label class="housing-cost-label housing-cost-label-to" for="to-value">до</label>
+                                    </div>
+                                </div>
+                                <div class="range-scale">
+                                    <div class="range-bar">
+                                        <div class="range-right-bar"></div>
+                                        <button class="range-toggle range-min">
+                                            <span class="visually-hidden">
+                                                изменить минимальную цену
+                                            </span>
+                                        </button>
+                                        <button class="range-toggle range-max">
+                                            <span class="visually-hidden">
+                                                изменить максимальную цену
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </fieldset>
                         <div class="catalog-sort-buttons">
@@ -114,9 +155,11 @@
                 </div>
                 <div class="catalog-menu-sort">
                     <p class="catalog-menu-finded">Найдено гостиниц: 38</p>
-                    <select class="catalog-filter" name="cost" id="cost">
-                      <option value="Сначала дешевые">Сначала дешевые</option>
-                    </select>
+                    <div class="catalog-select">
+                        <select class="catalog-filter" name="cost" id="cost">
+                            <option class="catalog-filter-option" value="Сначала дешевые">Сначала дешевые</option>
+                          </select>
+                    </div>
                     <ul class="catalog-sort-menu-type-list">
                         <li class="catalog-sort-menu-type-item sort-menu-item-picked">
                             <a class="catalog-view" href="#">
@@ -228,14 +271,16 @@
                             </li>
                         </ul>
                         <label class="hotels-on-page">Гостиниц на странице:</label>
-                        <select class="hotels-on-page-option" name="hotel-pages" id="hotel-pages">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                    </select>
+                        <div class="catalog-select">
+                            <select class="hotels-on-page-option catalog-filter" name="hotel-pages" id="hotel-pages">
+                                <option class="catalog-filter-option" value="1">1</option>
+                                <option class="catalog-filter-option" value="2">2</option>
+                                <option class="catalog-filter-option" value="3">3</option>
+                                <option class="catalog-filter-option" value="4">4</option>
+                                <option class="catalog-filter-option" value="5">5</option>
+                                <option class="catalog-filter-option" value="6">6</option>
+                              </select>
+                        </div>
                     </div>
                 </div>
             </section>
