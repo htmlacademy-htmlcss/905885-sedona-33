@@ -147,7 +147,7 @@ body {
     padding-left: 12px;
 }
 
-.header-icon:active .nav-icon path {
+.header-icon:active path {
     fill: grey;
 }
 
@@ -1461,10 +1461,9 @@ body {
     background-color: rgba(242, 242, 242, 0.8);
 }
 
-
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 .modal {
     position: relative;
