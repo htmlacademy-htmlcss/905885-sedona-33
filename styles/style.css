@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Типографика */
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     color: #000000;
     font-size: 20px;
     line-height: 21px;
@@ -219,7 +219,7 @@ body {
     color: #756257;
 }
 
-.header-icon:hover .nav-icon path {
+.header-icon:hover path {
     fill: #756257;
 }
 
@@ -1234,7 +1234,7 @@ body {
     list-style: none;
 }
 
-.footer-social-list .footer-social-item:nth-child(2) .footer-social-link .social-link-svg {
+.footer-social-item:nth-child(2) .social-link-svg {
     left: 14px;
 }
 
@@ -1252,7 +1252,7 @@ body {
     top: 10px;
 }
 
-.footer-social-link:hover .social-link-svg path {
+.footer-social-link:hover path {
     fill: #68A2CA;
 }
 
@@ -1261,7 +1261,7 @@ body {
     margin-top: 40px;
 }
 
-.footer-html-academy-logo:hover .html-academy-logo path {
+.footer-html-academy-logo:hover path {
     fill: #756257;
 }
 
@@ -1417,7 +1417,7 @@ body {
     left: 5px;
 }
 
-.bread-crumbs-list .bread-crumbs-item:nth-child(1) .bread-crumbs-main {
+.bread-crumbs-item:nth-child(1) .bread-crumbs-main {
     position: relative;
     display: block;
     width: 22px;
@@ -1432,7 +1432,7 @@ body {
     opacity: 0.6;
 }
 
-.bread-crumbs-main:hover .bread-crumbs-home path {
+.bread-crumbs-main:hover path {
     opacity: 0.6;
 }
 
@@ -1461,9 +1461,10 @@ body {
     background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+
+/* .modal-container-close {
     display: none;
-}
+} */
 
 .modal {
     position: relative;
@@ -1599,7 +1600,7 @@ body {
     margin-right: 56px;
 }
 
-.visitors-section .field-group:nth-child(2) .modal-label {
+.field-group-people:nth-child(2) .modal-label {
     width: 54px;
     margin-right: 43px;
 }
@@ -1667,7 +1668,7 @@ body {
     width: 216px;
     height: 110px;
     background-color: #333333;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
