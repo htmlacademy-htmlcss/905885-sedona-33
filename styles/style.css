@@ -1812,7 +1812,7 @@ body {
 .field-group-date:invalid {
   content: "Мы не можем отправить вас в прошлое";
   color: #FF5757;
-  font-family: 'PT Sans', 'sans-serif';
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
