@@ -870,7 +870,7 @@ body {
   border: 2px solid #FFFFFF;
   border-radius: 4px;
   color: inherit;
-  font-family: inherit;
+  font-family: 'PT Sans', 'serif', 'sans-serif';
   font-size: 18px;
   line-height: 23px;
 }
