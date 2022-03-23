@@ -39,11 +39,12 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z" fill="black"/>
                             </svg>
                             <span class="visually-hidden">Избранное</span>
-                            <span class="favourite-number">12</span>
                         </a>
                     </li>
+                    <li class="header-nav-list-user-item user-item-button">
+                        <a class="btn-want-here" href="#">Хочу Сюда!</a>
+                    </li>
                 </ul>
-                <a class="btn-want-here" href="#">Хочу Сюда!</a>
             </nav>
         </header>
         <main class="main-container">
@@ -65,18 +66,20 @@
                                     <p class="reasons-numbers">— №1 —</p>
                                     <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                                 </div>
-                                <img class="true-city-image" src="images/benefits-true-city.jpg" alt="Настоящий городок | Картинка">
                             </div>
                             <ul class="true-city-benefits-list">
-                                <li class="true-city-benefits-item true-city-benefits-item-style benefits-item-house">
+                                <li class="true-city-benefits-item true-city-benefits-item-style">
+                                    <img src="images/benefits-home.svg" width="75" height="72" alt="">
                                     <h4 class="title-housing">Жильё</h4>
-                                    <p class="benefits-paragraph">Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино!</p>
+                                    <p class="benefits-paragraph">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
                                 </li>
-                                <li class="true-city-benefits-item benefits-item-food">
+                                <li class="true-city-benefits-item">
+                                    <img src="images/benefits-burger.svg" width="74" height="70" alt="">
                                     <h4 class="title-housing">Еда</h4>
                                     <p class="benefits-paragraph">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
                                 </li>
-                                <li class="true-city-benefits-item true-city-benefits-item-style benefits-item-souvenirs">
+                                <li class="true-city-benefits-item true-city-benefits-item-style">
+                                    <img src="images/benefits-souvenir.svg" width="64" height="76" alt="">
                                     <h4 class="title-housing">Сувениры</h4>
                                     <p class="benefits-paragraph">Не только китайского,<br> но и настоящего местного производства!</p>
                                 </li>
@@ -84,7 +87,6 @@
                         </li>
                         <li class="reasons-item reasons-item-devil-bridge">
                             <div class="devil-bridge-section">
-                                <img class="devil-bridge-image" src="images/benefits-devil-bridge.jpg" alt="Мост дьявола">
                                 <div class="devil-bridge-paragraph">
                                     <h3 class="title-reason">Там есть <br>мост дьявола</h3>
                                     <p class="reasons-numbers">— №2 —</p>
@@ -111,7 +113,7 @@
                 </section>
                 <section class="hotel-search">
                     <h2 class="title-hotel-search">Заинтересовались?</h2>
-                    <p class="hotel-search-paragraph">Укажите предполагаемые даты поездки,<br> <span class="search-paragraph">и мы покажем вам лучшие предложения гостиниц в Седоне</span> </p>
+                    <p class="hotel-search-paragraph">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     <a class="hotel-search-button" href="#">Поиск гостиницы в седоне</a>
                 </section>
                 <section class="mailing">
@@ -184,23 +186,19 @@
                         </p>
                         <div class="visitors-section">
                             <p class="field-group field-group-people">
-                                <button class="people-plus"><span class="visually-hidden">Увеличить количество</span></button>
-                                <button class="people-minus"><span class="visually-hidden">Уменьшить количество</span></button>
                                 <label class="modal-label" for="adults">Взрослые:</label>
                                 <input class="find-hotel-adults-field people-field field" type="number" id="adults" name="adults" value="2" placeholder="Взрослые" required>
                             </p>
-                            <p class="field-group field-group-people field-group-children">
-                                <button class="people-plus"><span class="visually-hidden">Увеличить количество</span></button>
-                                <button class="people-minus"><span class="visually-hidden">Уменьшить количество</span></button>
+                            <p class="field-group field-group-people">
                                 <span class="modal-label label-tooltip">
-                                    <label class="modal-label label-popover" for="children">Дети:</label>
-                                    <span class="tooltip">
-                                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                                        </button>
-                                        <span class="tooltip-text" role="tooltip" id="tooltip-label">
-                                            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                                        </span>
+                                <label class="modal-label label-popover" for="children">Дети:</label>
+                                <span class="tooltip">
+                                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                                    </button>
+                                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                                     </span>
+                                </span>
                                 </span>
                                 <input class="find-hotel-children-field people-field field" type="number" id="children" name="children" value="1" placeholder="Дети" required>
                             </p>
