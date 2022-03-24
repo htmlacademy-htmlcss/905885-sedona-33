@@ -107,7 +107,7 @@ body {
   height: 100%;
 }
 
-.header-nav-list-user-item:nth-child(2) .header-icon::after {
+.user-item-favourite .header-icon::after {
   position: absolute;
   top: 15px;
   right: -2px;
@@ -132,7 +132,7 @@ body {
   z-index: 1;
 }
 
-.header-nav-list-user-item:nth-child(2):active .favourite-number {
+.user-item-favourite:active .favourite-number {
   color: rgba(0, 0, 0, 0.1);
 }
 
@@ -354,7 +354,7 @@ body {
   padding-bottom: 82px;
   background-image: url(../images/welcome-background.jpg);
   background-color: #a8cce2;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 1200px 485px;
 }
 
@@ -459,10 +459,10 @@ body {
 .hotel-search-button {
   display: block;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 21px;
+  padding-bottom: 9px;
   width: 575px;
-  height: 30px;
+  min-height: 30px;
   text-decoration: none;
   text-align: center;
   justify-content: center;
@@ -470,7 +470,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
   background-color: #756257;
   border-radius: 10px;
 }
@@ -490,20 +489,21 @@ body {
 
 .mailing {
   width: 1200px;
-  height: 411px;
+  min-height: 411px;
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
-  background-image: url(../images/mailing-background.jpg);
-  background-size: 200%;
-  background-position: center;
+  background-image: url(../images/background-mailing.jpg);
+  background-color: #52749f;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .mailing-button {
-  padding: 0;
-  width: 200px;
-  height: 60px;
+  padding: 17px 33px 17px 35px;
+  min-width: 200px;
+  max-width: 400px;
+  min-height: 26px;
   text-transform: uppercase;
   color: #FFFFFF;
   font-family: "PT Sans", sans-serif;
@@ -534,7 +534,7 @@ body {
   padding: 0;
   padding-left: 22px;
   width: 578px;
-  height: 60px;
+  min-height: 60px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -624,6 +624,7 @@ body {
   color: #FFFFFF;
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
+  background-color: #375466;
 }
 
 .catalog-menu-sort {
@@ -792,7 +793,7 @@ body {
 }
 
 .infrastruct {
-  width: 150px;
+  min-width: 150px;
   margin: 0;
   margin-top: 45px;
   margin-right: 67px;
@@ -805,7 +806,7 @@ body {
 .type-housing {
   margin: 0;
   margin-top: 45px;
-  width: 144px;
+  min-width: 144px;
   margin-right: 167px;
 }
 
@@ -853,6 +854,7 @@ body {
 
 .form-sort {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 72px;
 }
 
@@ -886,7 +888,6 @@ body {
 }
 
 .housing-cost-input:focus {
-  outline: none;
   outline: 3px solid #83B3D3;
 }
 
@@ -956,7 +957,12 @@ body {
 }
 
 .hotel-image-link:focus .hotel-image {
+  outline-offset: 0;
   outline: 3px solid #83B3D3;
+}
+
+.hotel-image-link:focus-visible .hotel-image {
+  outline: none;
 }
 
 .hotel-image-link:active .hotel-image {
@@ -1079,10 +1085,6 @@ body {
   width: 227px;
 }
 
-.range-scale .range-toggle:hover {
-  background: rgba(255, 255, 255, 0.6);
-}
-
 .range-right-bar {
   position: absolute;
   height: 4px;
@@ -1100,10 +1102,6 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.range-toggle:hover {
-  background: rgba(255, 255, 255, 0.6);
 }
 
 .range-toggle:focus {
@@ -1249,7 +1247,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 141px;
+  margin-bottom: 94px;
 }
 
 .hotel-button-more {
@@ -1329,9 +1327,9 @@ body {
 
 .catalog-pages-buttons {
   display: inline-block;
-  width: 55px;
-  min-height: 41px;
-  padding-top: 14px;
+  min-width: 27px;
+  min-height: 27px;
+  padding: 14px;
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
@@ -1398,11 +1396,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-width: 107px;
+  max-width: 214px;
   min-height: 18px;
   padding: 0;
   margin: 0;
-  margin-top: 45px;
-  margin-left: 62px;
+  margin-top: 38px;
+  margin-left: 61px;
   margin-right: auto;
   list-style: none;
 }
@@ -1413,36 +1412,37 @@ body {
   height: 40px;
 }
 
-.footer-social-item:first-child {
-  position: relative;
-  top: -7px;
-}
-
-.footer-social-item:nth-child(2) {
-  position: relative;
-  top: -5px;
-  left: -3px;
-}
-
-.footer-social-item:nth-child(3) {
-  position: relative;
-  left: -13px;
-  top: -6px;
-}
-
 .footer-social-link {
+  position: relative;
   display: block;
   margin: 0;
   padding: 0;
   width: 40px;
   height: 40px;
+  align-items: center;
 }
 
-.social-link-svg {
-  position: relative;
-  left: 10px;
-  top: 10px;
+.social-link-twitter {
+  position: absolute;
+  top: 12px;
+  left: 11px;
 }
+
+.social-link-facebook {
+  position: absolute;
+  top: 11px;
+  left: 15px;
+}
+
+.footer-social-link-youtube {
+  margin-left: 2px;
+}
+
+.social-link-youtube {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+} 
 
 .footer-social-link:hover path {
   fill: #68A2CA;
@@ -1460,22 +1460,26 @@ body {
   margin-left: auto;
   margin-right: 49.5px;
   margin-top: 24px;
+  align-items: center;
 }
 
-.html-academy-logo {
-  position: absolute;
-  top: 18px;
-  left: 22.5px;
+.footer-html-image {
   display: block;
+  margin-left: 23px;
+  margin-top: 18px;
 }
 
-.footer-html-academy-logo:hover path {
-  fill: #756257;
+.footer-html-academy-logo:hover .footer-html-image {
+  opacity: 0.6;
 }
 
 .footer-html-academy-logo:focus {
   border-radius: 10px;
   outline: 3px solid #83B3D3;
+}
+
+.footer-html-academy-logo:active .footer-html-image {
+  opacity: 0.3;
 }
 
 .footer-social-link:focus {
@@ -1484,7 +1488,7 @@ body {
 }
 
 .footer-social-item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 3px;
 }
 
 .reasons-item-devil-bridge {
@@ -1541,13 +1545,13 @@ body {
 }
 
 .footer-phone {
-  display: inline-block;
-  width: 361px;
+  display: block;
+  min-width: 361px;
   height: 40px;
   margin: 0 auto;
-  margin-top: 40px;
-  margin-left: 56px;
-  margin-right: 48px;
+  margin-top: 25px;
+  margin-left: 120px;
+  padding: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -1753,7 +1757,7 @@ body {
   position: absolute;
   padding: 0;
   top: 54px;
-  right: 70px;
+  right:70px;
   width: 53px;
   height: 53px;
   background: #F2F2F2;
@@ -1786,9 +1790,9 @@ body {
   width: 499px;
   position: relative;
   top: -10px;
-  left: -76px;
+  left: -79px;
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 56px;
   padding: 0;
   font: inherit;
   font-weight: 700;
@@ -1851,6 +1855,8 @@ body {
   position: relative;
   width: 420px;
   height: 50px;
+  top: -5px;
+  left: 5px;
   padding-left: 19px;
   font-weight: 700;
   font-size: 18px;
@@ -1873,7 +1879,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .date-from-error {
   position: absolute;
-  top: 50px;
+  top: 38px;
   left: 155px;
   font-size: 16px;
   line-height: 40px;
@@ -1882,7 +1888,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .date-to-correct {
   position: absolute;
-  top: 50px;
+  top: 38px;
   left: 155px;
   font-size: 16px;
   line-height: 40px;
@@ -1890,12 +1896,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .people-field {
+  position: relative;
+  top: -5px;
   width: 133px;
   height: 50px;
-  font: inherit;
-  font-weight: 700;
+  padding-left: 7px;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 40px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -1912,12 +1921,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .visitors-section {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   width: 475px;
 }
 
 .visitors-section .field-group:first-child {
-  margin-right: 56px;
+  margin-right: 49px;
 }
 
 .field-group-people {
@@ -1927,27 +1936,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .people-plus {
   position: absolute;
   left: 256px;
-  top: 18px;
+  top: 13px;
   background: none;
   background-image: url(../images/plus.svg);
   width: 13px;
   height: 13px;
   border: none;
+  z-index: 2;
 }
 
 .people-minus {
   position: absolute;
   left: 174px;
-  top: 24px;
+  top: 18px;
   background: none;
   background-image: url(../images/minus-input.svg);
   border: none;
   width: 13px;
   height: 1px;
+  z-index: 3;
 }
 
 .field-group-children .people-plus {
-  left: 194px;
+  left: 198px;
 }
 
 .field-group-children .people-minus {
@@ -1997,8 +2008,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: -30px;
-  left: 57px;
+  top: -31px;
+  left: 54px;
   width: 25px;
   height: 25px;
   border: none;
