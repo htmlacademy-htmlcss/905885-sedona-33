@@ -117,9 +117,9 @@
                 <section class="mailing">
                     <h2 class="title-mailing title-mailing-index">Подпишитесь на рассылку</h2>
                     <p class="mailing-paragraph">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-                    <form class="mailing-email" action="https://echo.htmlacademy.ru" method="get">
-                        <input class="mailing-input" type="email" placeholder="Ваш e-mail" id="email-main" name="email-main"><label class="visually-hidden" for="email-main">Ваш e-mail.</label>
-                        <button class="mailing-button" type="submit">Подписаться</button>
+                    <form class="mailing-email-main" action="https://echo.htmlacademy.ru" method="get">
+                        <input class="mailing-input input" type="email" placeholder="Ваш e-mail" id="email-main" name="email-main" required><label class="visually-hidden" for="email-main">Ваш e-mail.</label>
+                        <button class="mailing-button button" type="submit">Подписаться</button>
                     </form>
                 </section>
             </div>
@@ -166,7 +166,7 @@
 
         <div class="modal-container modal-container-close">
             <div class="modal modal-find-hotel">
-                <button class="modal-close-button" type="button">
+                <button class="modal-close-button button" type="button">
                 <span class="visually-hidden">Закрыть.</span>
             </button>
                 <section class="modal-content">
@@ -174,28 +174,30 @@
                     <form class="find-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
                         <p class="field-group field-group-date">
                             <label class="modal-label" for="date-from">Дата заезда:</label>
-                            <input class="find-hotel-field field" type="date" id="date-from" name="date-from" value="2020-04-27" required>
+                            <input class="find-hotel-field field" type="text" id="date-from" name="date-from" value="27 апреля 2020" required>
+                            <span class="date-from-cal"></span>
                             <span class="date-from-error">Мы не можем отправить вас в прошлое.</span>
                         </p>
                         <p class="field-group field-group-date">
                             <label class="modal-label" for="date-to">Дата выезда:</label>
-                            <input class="find-hotel-field field" type="date" id="date-to" name="date-to" value="2021-09-01" required>
+                            <input class="find-hotel-field field" type="text" id="date-to" name="date-to" value="1 сентября 2021" required>
+                            <span class="date-from-cal"></span>
                             <span class="date-to-correct">На эти даты есть свободные номера. Пока есть.</span>
                         </p>
                         <div class="visitors-section">
                             <p class="field-group field-group-people">
-                                <button class="people-plus"><span class="visually-hidden">Увеличить количество.</span></button>
-                                <button class="people-minus"><span class="visually-hidden">Уменьшить количество.</span></button>
+                                <button class="people-plus button"><span class="visually-hidden">Увеличить количество.</span></button>
+                                <button class="people-minus button"><span class="visually-hidden">Уменьшить количество.</span></button>
                                 <label class="modal-label" for="adults">Взрослые:</label>
                                 <input class="find-hotel-adults-field people-field field" type="number" id="adults" name="adults" value="2" placeholder="Взрослые" required>
                             </p>
                             <p class="field-group field-group-people field-group-children">
-                                <button class="people-plus"><span class="visually-hidden">Увеличить количество.</span></button>
-                                <button class="people-minus"><span class="visually-hidden">Уменьшить количество.</span></button>
+                                <button class="people-plus button"><span class="visually-hidden">Увеличить количество.</span></button>
+                                <button class="people-minus button"><span class="visually-hidden">Уменьшить количество.</span></button>
                                 <span class="modal-label label-tooltip">
                                     <label class="modal-label label-popover" for="children">Дети:</label>
                                     <span class="tooltip">
-                                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                                        <button class="tooltip-toggle button" type="button" aria-labelledby="tooltip-label">
                                         </button>
                                         <span class="tooltip-text" role="tooltip" id="tooltip-label">
                                             Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
@@ -205,7 +207,7 @@
                                 <input class="find-hotel-children-field people-field field" type="number" id="children" name="children" value="1" placeholder="Дети" required>
                             </p>
                         </div>
-                        <button class="modal-find-button" type="submit">Найти</button>
+                        <button class="modal-find-button button" type="submit">Найти</button>
                     </form>
                 </section>
             </div>
