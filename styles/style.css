@@ -40,6 +40,10 @@ body {
   opacity: 0.5;
 }
 
+.select:disabled {
+  opacity: 0.5;
+}
+
 .input:disabled + .control-mark {
   opacity: 0.5;
 }
@@ -94,6 +98,7 @@ body {
   padding: 40px auto;
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .header-item-picked {
@@ -369,12 +374,11 @@ body {
 .sedona-preview {
   margin-top: -1px;
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 62px;
   background-image: url(../images/welcome-background.jpg);
   background-size: cover;
   background-position: center;
   background-color: #a8cce2;
-  background-size: 1200px 485px;
 }
 
 .true-city-benefits-list {
@@ -517,8 +521,8 @@ body {
   flex-direction: column;
   color: #FFFFFF;
   background-image: url(../images/background-mailing.jpg);
+  background-size: cover;
   background-color: #52749f;
-  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -1070,7 +1074,7 @@ body {
 .sort-menu-item-picked {
   outline: 2px solid #000000;
   display: block;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .form-sort legend {
